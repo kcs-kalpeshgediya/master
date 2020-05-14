@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="TestTowr">
+    <classes>
+      <class name="SmarTBase.Base"/>
+    </classes>
+  </test> <!-- TestTowr -->
+  <test name="TestTowr(failed)" parallel="none">
+    <classes>
+      <class name="SmarTBase.Base">
+        <methods>
+          <include name="TowerTestcases"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- SmarTBase.Base -->
+    </classes>
+  </test> <!-- TestTowr(failed) -->
+</suite> <!-- Failed suite [Suite] -->
