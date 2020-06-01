@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 29 15:00:24 IST 2020</td>
+<td>Started on:</td><td>Thu May 14 15:19:02 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>310 seconds (310335 ms)</td>
+<tr><td>Total time:</td><td>481 seconds (481617 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,33 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='SmarTown.Base1.Voucher()'><b>Voucher</b><br>Test class: SmarTown.Base1</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	expected [PQR] but found [PQRS]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at PerferencesTestCases.VoucherTestCases.Voucher(VoucherTestCases.java:191)
-	at SmarTown.Base1.Voucher(Base1.java:104)
+<td title='SmarTBase.Base.TowerTestcases()'><b>TowerTestcases</b><br>Test class: SmarTBase.Base</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtsearch&quot;}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-VF9ADLC&apos;, ip: &apos;192.168.43.214&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\RAMESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b64c6f367e49afd8c626ca591da2d464
+*** Element info: {Using=id, value=txtsearch}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Configuration.SearchEditRecordTower.Search(SearchEditRecordTower.java:30)
+	at ConfigurationTestCases.ConfigurationTower.Tower(ConfigurationTower.java:67)
+	at SmarTBase.Base.TowerTestcases(Base.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -102,15 +123,36 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace864326906", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace864326906'><pre>java.lang.AssertionError: The following asserts failed:
-	expected [PQR] but found [PQRS]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at PerferencesTestCases.VoucherTestCases.Voucher(VoucherTestCases.java:191)
-	at SmarTown.Base1.Voucher(Base1.java:104)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1189084611", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189084611'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#txtsearch&quot;}
+  (Session info: chrome=81.0.4044.138)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-VF9ADLC&apos;, ip: &apos;192.168.43.214&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\RAMESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b64c6f367e49afd8c626ca591da2d464
+*** Element info: {Using=id, value=txtsearch}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Configuration.SearchEditRecordTower.Search(SearchEditRecordTower.java:30)
+	at ConfigurationTestCases.ConfigurationTower.Tower(ConfigurationTower.java:67)
+	at SmarTBase.Base.TowerTestcases(Base.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -132,12 +174,50 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>257</td>
-<td>SmarTown.Base1@32d992b2</td></tr>
+<td>55</td>
+<td>SmarTBase.Base@4ae3c1cd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SmarTBase.Base.DocTypeTestCAses()'><b>DocTypeTestCAses</b><br>Test class: SmarTBase.Base</td>
+<td></td>
+<td>52</td>
+<td>SmarTBase.Base@4ae3c1cd</td></tr>
+<tr>
+<td title='SmarTBase.Base.IdentityRelation()'><b>IdentityRelation</b><br>Test class: SmarTBase.Base</td>
+<td></td>
+<td>47</td>
+<td>SmarTBase.Base@4ae3c1cd</td></tr>
+<tr>
+<td title='SmarTBase.Base.IdentityType()'><b>IdentityType</b><br>Test class: SmarTBase.Base</td>
+<td></td>
+<td>21</td>
+<td>SmarTBase.Base@4ae3c1cd</td></tr>
+<tr>
+<td title='SmarTBase.Base.Identitycreate()'><b>Identitycreate</b><br>Test class: SmarTBase.Base</td>
+<td></td>
+<td>128</td>
+<td>SmarTBase.Base@4ae3c1cd</td></tr>
+<tr>
+<td title='SmarTBase.Base.UnitTestCases()'><b>UnitTestCases</b><br>Test class: SmarTBase.Base</td>
+<td></td>
+<td>90</td>
+<td>SmarTBase.Base@4ae3c1cd</td></tr>
+<tr>
+<td title='SmarTBase.Base.VehicleType()'><b>VehicleType</b><br>Test class: SmarTBase.Base</td>
+<td></td>
+<td>48</td>
+<td>SmarTBase.Base@4ae3c1cd</td></tr>
 </table><p>
 </body>
 </html>
