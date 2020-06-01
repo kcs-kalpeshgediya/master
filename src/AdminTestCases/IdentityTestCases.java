@@ -8,10 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import SmartTownAdmin.IdentityOjbect;
+import SmarTownAdmin.IdentityOjbect;
 
-
-public class IdentityTestCases {
+public class IdentityTestcases  {
 	@Test
 	public static  void Identity(WebDriver webdriver) throws InterruptedException, IOException
 	{
@@ -27,13 +26,13 @@ public class IdentityTestCases {
     ido.select().sendKeys(Keys.ARROW_DOWN);
     ido.select().sendKeys(Keys.ENTER);
     Thread.sleep(2000);
-    ido.Firstname().sendKeys("kalpesh12");
+    ido.Firstname().sendKeys("Sanjay");
     Thread.sleep(2000);
-    ido.lastname().sendKeys("Mahera187");
+    ido.lastname().sendKeys("Ratnotar");
     Thread.sleep(2000);
-	ido.moblieno().sendKeys("6565767564");
+	ido.moblieno().sendKeys("9926765309");
 	Thread.sleep(2000);
-	ido.Email().sendKeys("Chan34@gmail.com");
+	ido.Email().sendKeys("Sanjay12@gmail.com");
 	Thread.sleep(2000);
 	ido.gender().click();
 	Thread.sleep(2000);
@@ -57,7 +56,7 @@ public class IdentityTestCases {
 	ion.identityType().sendKeys(Keys.ENTER);
 	Thread.sleep(2000);
 	
-	ion.Unit().sendKeys("F655");
+	ion.Unit().sendKeys("H523");
 	ion.Unit().sendKeys(Keys.ENTER);
 	Thread.sleep(2000);
 	
@@ -97,7 +96,7 @@ public class IdentityTestCases {
 	depan.Salutation().sendKeys(Keys.ENTER);
 	Thread.sleep(2000);
 	
-	depan.Dfirstname().sendKeys("Hitesh");
+	depan.Dfirstname().sendKeys("Naresh Sompura");
 	Thread.sleep(2000);
 	
 	depan.DIdentityType().click();
@@ -113,7 +112,7 @@ public class IdentityTestCases {
 	depan.Gender1().click();
 	Thread.sleep(2000);
 	
-	depan.DMoblie().sendKeys("9099743433");
+	depan.DMoblie().sendKeys("8925477001");
 	Thread.sleep(2000);
 	
 	depan.Dsave().click();
@@ -143,54 +142,55 @@ public class IdentityTestCases {
 	
 	depan.DoSave1().click();
 	Thread.sleep(2000);*/
-
+	
 	depan.Finish().click();
 	Thread.sleep(2000);
 	depan.Finish1().click();
 
 	//IdentityOjbect depan=new IdentityOjbect(webdriver);
 	
+	
+	depan.Search().sendKeys("9926765309");
 	Thread.sleep(3000);
-	depan.Search().sendKeys("F655");
-	Thread.sleep(3000);
 	
 	
-	depan.Edit().click();
+	IdentityOjbect Edit=new IdentityOjbect(webdriver);
+	Edit.Edit().click();
 	Thread.sleep(2000);
-	depan.Firstname().clear();
+	Edit.Firstname().clear();
 	Thread.sleep(2000);
-	depan.Firstname().sendKeys("Ravish");
+	Edit.Firstname().sendKeys("Ramesh");
 	Thread.sleep(2000);
-	depan.lastname().clear();
+	Edit.lastname().clear();
 	Thread.sleep(2000);
-	depan.lastname().sendKeys("patel");
+	Edit.lastname().sendKeys("kumar");
 	Thread.sleep(2000);
-	depan.moblieno().clear();
+	Edit.moblieno().clear();
 	Thread.sleep(2000);
-	depan.moblieno().sendKeys("4242424242");
+	Edit.moblieno().sendKeys("55555555555");
 	Thread.sleep(2000);
-	depan.Email().clear();
-	Thread.sleep(2000);
-	depan.Email().sendKeys("patel345@gmail.com");
+	Edit.Email().clear();
+	Edit.Email().sendKeys("rameshkumar12@gmail.com");
 	Thread.sleep(2000);
 	
-	depan.Enext().click();
+	Edit.Enext().click();
 	Thread.sleep(4000);
-	depan.popup().click();
+	Edit.popup().click();
 	Thread.sleep(4000);
-	depan.Next1().click();
+	Edit.Next1().click();
 	Thread.sleep(4000);
-	depan.Dnext().click();
+	Edit.Dnext().click();
 	Thread.sleep(3000);
 	
-	depan.Finish().click();
+	Edit.Finish().click();
 	Thread.sleep(3000);
-	//depan.Finish1().click();
+	Edit.Finish1().click();
 	
-	
-	//Thread.sleep(3000);
-	
-	depan.Search().sendKeys("F655");
+	IdentityOjbect Esea=new IdentityOjbect(webdriver);
 	Thread.sleep(3000);
+	
+	Esea.ESearch().sendKeys("55555555555");
+	Thread.sleep(3000);
+	
 	}
 }

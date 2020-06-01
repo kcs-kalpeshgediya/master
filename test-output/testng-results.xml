@@ -1,56 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="7" passed="6">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="481617" started-at="2020-05-14T09:49:02Z" finished-at="2020-05-14T09:57:04Z">
+  <suite name="Default suite" duration-ms="310335" started-at="2020-05-29T09:30:24Z" finished-at="2020-05-29T09:35:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="481617" started-at="2020-05-14T09:49:02Z" finished-at="2020-05-14T09:57:04Z">
-      <class name="SmarTBase.Base">
-        <test-method status="PASS" signature="setup()[pri:0, instance:SmarTBase.Base@4ae3c1cd]" name="setup" is-config="true" duration-ms="36764" started-at="2020-05-14T15:19:02Z" finished-at="2020-05-14T15:19:39Z">
+    <test name="Default test" duration-ms="310335" started-at="2020-05-29T09:30:24Z" finished-at="2020-05-29T09:35:34Z">
+      <class name="SmarTown.Base1">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SmarTown.Base1@32d992b2]" name="setup" is-config="true" duration-ms="52319" started-at="2020-05-29T15:00:24Z" finished-at="2020-05-29T15:01:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="TowerTestcases()[pri:1, instance:SmarTBase.Base@4ae3c1cd]" name="TowerTestcases" duration-ms="55310" started-at="2020-05-14T15:19:39Z" finished-at="2020-05-14T15:20:34Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="Voucher()[pri:7, instance:SmarTown.Base1@32d992b2]" name="Voucher" duration-ms="257925" started-at="2020-05-29T15:01:16Z" finished-at="2020-05-29T15:05:34Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtsearch"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-VF9ADLC', ip: '192.168.43.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\RAMESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b64c6f367e49afd8c626ca591da2d464
-*** Element info: {Using=id, value=txtsearch}]]>
+              <![CDATA[The following asserts failed:
+	expected [PQR] but found [PQRS]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtsearch"}
-  (Session info: chrome=81.0.4044.138)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-VF9ADLC', ip: '192.168.43.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\RAMESH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64430}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b64c6f367e49afd8c626ca591da2d464
-*** Element info: {Using=id, value=txtsearch}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at Configuration.SearchEditRecordTower.Search(SearchEditRecordTower.java:30)
-	at ConfigurationTestCases.ConfigurationTower.Tower(ConfigurationTower.java:67)
-	at SmarTBase.Base.TowerTestcases(Base.java:66)
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	expected [PQR] but found [PQRS]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at PerferencesTestCases.VoucherTestCases.Voucher(VoucherTestCases.java:191)
+	at SmarTown.Base1.Voucher(Base1.java:104)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -72,40 +44,16 @@ Session ID: b64c6f367e49afd8c626ca591da2d464
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
 	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TowerTestcases -->
-        <test-method status="PASS" signature="UnitTestCases()[pri:2, instance:SmarTBase.Base@4ae3c1cd]" name="UnitTestCases" duration-ms="90193" started-at="2020-05-14T15:20:34Z" finished-at="2020-05-14T15:22:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UnitTestCases -->
-        <test-method status="PASS" signature="DocTypeTestCAses()[pri:3, instance:SmarTBase.Base@4ae3c1cd]" name="DocTypeTestCAses" duration-ms="52942" started-at="2020-05-14T15:22:05Z" finished-at="2020-05-14T15:22:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DocTypeTestCAses -->
-        <test-method status="PASS" signature="IdentityType()[pri:4, instance:SmarTBase.Base@4ae3c1cd]" name="IdentityType" duration-ms="21774" started-at="2020-05-14T15:22:58Z" finished-at="2020-05-14T15:23:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IdentityType -->
-        <test-method status="PASS" signature="IdentityRelation()[pri:5, instance:SmarTBase.Base@4ae3c1cd]" name="IdentityRelation" duration-ms="47112" started-at="2020-05-14T15:23:19Z" finished-at="2020-05-14T15:24:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IdentityRelation -->
-        <test-method status="PASS" signature="VehicleType()[pri:6, instance:SmarTBase.Base@4ae3c1cd]" name="VehicleType" duration-ms="48668" started-at="2020-05-14T15:24:07Z" finished-at="2020-05-14T15:24:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VehicleType -->
-        <test-method status="PASS" signature="Identitycreate()[pri:7, instance:SmarTBase.Base@4ae3c1cd]" name="Identitycreate" duration-ms="128742" started-at="2020-05-14T15:24:55Z" finished-at="2020-05-14T15:27:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Identitycreate -->
-      </class> <!-- SmarTBase.Base -->
+        </test-method> <!-- Voucher -->
+      </class> <!-- SmarTown.Base1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
